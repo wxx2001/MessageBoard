@@ -1,0 +1,116 @@
+/*清除浏览器默认边距，
+使边框和内边距的值包含在元素的width和height内*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*垂直水平居中*/
+section {
+    display: flex;/*弹性盒*/
+    justify-content: center;/*居中排列*/
+    align-items: center;/*交叉轴中心对齐*/
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #f1f4f9, #dff1ff);/*线性渐变色，to bottom代表方向*/
+}
+
+/*背景颜色·*/
+section .color {
+    position: absolute;
+    filter: blur(200px);/*高斯模糊*/
+}
+
+section .color:nth-child(1) {
+    top: -350px;
+    width: 500px;
+    height: 500px;
+    background: deeppink;
+}
+
+section .color:nth-child(2) {
+    top: -150px;
+    left: 100px;
+    width: 400px;
+    height: 500px;
+    background: #fbff6b;
+}
+
+section .color:nth-child(3) {
+    bottom: 50px;
+    right: 100px;
+    width: 400px;
+    height: 400px;
+    background: #3f63ff;
+}
+
+.user
+{
+    margin: 0 auto;
+    display: block;/*块元素*/
+    margin-bottom: 20px;
+    width:50%;
+    border-radius: 50%;/*圆角效果*/
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    min-height: 300px;
+    background: linear-gradient(to bottom, rgba(255, 184, 252, 0.85), rgba(128, 255, 247, 0.85));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(70, 16, 52, 0.92);/*水平阴影的距离 垂直阴影的距离 模糊的距离 阴影的颜色 */
+    border: 1px solid rgba(175, 175, 175, 0.92);
+    border-right: 1px solid rgba(175, 175, 175, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+
+.form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+}
+
+.form h2 {
+	text-align:center;
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;/*粗细*/
+    letter-spacing: 5px;/*增加汉字间距*/
+    margin-bottom: 30px;
+}
+
+.form .inputBox {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form .inputBox input {
+    width: 100%;
+    padding: 10px 20px;/*上下扩宽10px,左右扩宽20px*/
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color:#fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.form table{
+	position:relative;
+	margin-top:20px;
+	width:400px;
+}
+
+

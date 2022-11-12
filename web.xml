@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<web-app>
+<jsp-config>
+	<jsp-property-group>
+		<url-pattern>*.jsp</url-pattern>
+		<el-ignored>false</el-ignored>
+	</jsp-property-group>
+</jsp-config>
+
+<servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>handle.data.HandleLogin</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>loginmServlet</servlet-name>
+    <servlet-class>handle.data.HandleLoginm</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>loginmServlet</servlet-name>
+    <url-pattern>/loginmServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>signServlet</servlet-name>
+    <servlet-class>handle.data.HandleSign</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>signServlet</servlet-name>
+    <url-pattern>/signServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>messageServlet</servlet-name>
+    <servlet-class>handle.data.HandleMessage</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>messageServlet</servlet-name>
+    <url-pattern>/messageServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>changemServlet</servlet-name>
+    <servlet-class>handle.data.HandleChangem</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>changemServlet</servlet-name>
+    <url-pattern>/changemServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>deleteServlet</servlet-name>
+    <servlet-class>handle.data.HandleDelete</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>deleteServlet</servlet-name>
+    <url-pattern>/deleteServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>inputServlet</servlet-name>
+    <servlet-class>handle.data.HandleInput</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>inputServlet</servlet-name>
+    <url-pattern>/inputServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>inputpersonalServlet</servlet-name>
+    <servlet-class>handle.data.HandleInputpersonal</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>inputpersonalServlet</servlet-name>
+    <url-pattern>/inputpersonalServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>replyServlet</servlet-name>
+    <servlet-class>handle.data.HandleReply</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>replyServlet</servlet-name>
+    <url-pattern>/replyServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>alterServlet</servlet-name>
+    <servlet-class>handle.data.HandleAlter</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>alterServlet</servlet-name>
+    <url-pattern>/alterServlet</url-pattern>
+</servlet-mapping>
+</web-app>
